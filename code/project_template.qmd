@@ -1,7 +1,7 @@
 ---
-title: "Imagination Exercise"
-subtitle: "Module Topic Here"
-author: "Your Name Here"
+title: "RESEARCH"
+subtitle: "Examining the Impact of Smoking abns on mortality Rates: A Difference-in-Difference Analysis"
+author: "Nicholas Adu Gyamfi"
 institute: "Old Dominion University"
 format: 
   html:
@@ -58,9 +58,26 @@ Describe the application you imagine using the particular method we're studying.
 
 Write down a regression model (or series of models) that corresponds to your setting and question, and identify the causal parameter of interest.^[You may exclude any control variables or fixed effects that are not *essential* to the casual inference strategy.]  Describe any backdoors that pose a threat to your identification strategy and how you might address them. (**4 Points**)
 
+
+```{r}
+sbl <- read.csv("C:/Users/adugy/Documents/R_Development_Code/RPackage/econ708_research/data/population_data.csv")
+
+sbl_year <- read.csv("C:/Users/adugy/Documents/R_Development_Code/RPackage/econ708_research/data/states.csv")
+```
+
+mort_sbl = \beta_0 + \beta_1 * (SBL) + \beta_2 * (Z) + \epsilon
+
+The above depicts the proposed regression model that corresponds to my setting and question showing the relationship between Maternal and Child Health (MCH) and Future Criminal Behavior (FCB). Adverse child experience (ACE), a back door threatens this identification strategy. I intend to control for it by adding it to the regression model. 
+
+
 *Write your answer here.*
 
 ### Data Description
+
+The dataset for this research was collected from the the below URL's.
+1. 
+
+
 
 Describe the ideal data set for identifying the causal effect of interest described in the application above.  You don’t need to constrain yourself to known, existing variables and data sets, although identifying actual data is OK.  You can also assume you have unlimited ability/resources to measure variables if you want.  Identify the dependent variable in your regression model and the explanatory variables. (**4 Points**)
 
